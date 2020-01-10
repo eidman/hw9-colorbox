@@ -1,0 +1,106 @@
+/* RESET */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* default font */
+  color: #000;
+}
+
+body * {
+  font-family: inherit;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+/* FONT DEFAULTS */
+h1 {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: .83;
+}
+
+h2 {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+p {
+}
+
+a {
+}
+
+/* FLEX UTILS */
+.flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-stretch {
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* BUTTONS */
+.btn {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  width: 2vh;
+  height: 50px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.SlateGrey-box-button {
+  background-color: SlateGrey;
+}
+
+.DimGrey-box-button {
+  background-color: DimGrey;
+}
+
+.LightGrey-box-button {
+  background-color: LightGrey;
+}
