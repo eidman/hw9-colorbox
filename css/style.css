@@ -20,6 +20,10 @@ body * {
   color: inherit;
 }
 
+html,body {
+  margin: 0;
+}
+
 img {
   width: 100%;
 }
@@ -48,6 +52,10 @@ a {
 .flex {
   display: flex;
   align-items: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .flex-center {
@@ -81,26 +89,44 @@ a {
 }
 
 /* BUTTONS */
-.btn {
+
+
+input {
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  width: 2vh;
-  height: 50px;
-  margin: 5px;
+  padding: 10px 30px;
+  margin: 10px 2px 30px 2px;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-}
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 35px;
+  text-align: center;
+  }
 
-.SlateGrey-box-button {
+
+
+.slate-button {
   background-color: SlateGrey;
 }
 
-.DimGrey-box-button {
+.dim-button {
   background-color: DimGrey;
 }
 
-.LightGrey-box-button {
+.light-button {
   background-color: LightGrey;
+}
+
+.box-container {
+  width: 180vh;
+  height: 80vh;
+  border: 1px solid #111;
+}
+
+.slate-box {
+  width: 18vh;
+  height: 8vh;
+  background-color: SlateGrey;
 }
