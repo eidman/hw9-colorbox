@@ -25,8 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
     .getElementById("dark-btn")
     .addEventListener("click", myFunction, false);
 
+  var darkBox = document.createElement("dark-box"); // is a node
+  darkBox.innerHTML = "TEST";
+  console.log(darkBox);
+
   function myFunction() {
-    alert("Hello! I am an alert box!!");
+    document.body.appendChild(darkBox);
   }
 });
 // // capture the value of the slate box
