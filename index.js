@@ -1,55 +1,79 @@
+// /*
+//  * document - virtual representation of the entire page
+//  * variable - a way to save a piece of data, so we can reuse it later
+//  * event listener - a way to register events that happen in the browser
+//  * string - piece of text
+//  * element - virtual representation of the html on the page
+// */
+
 /*
  * document - virtual representation of the entire page
- * variable - a way to save a piece of data, so we can reuse it later
+ * variable - a way to save a piece of data so we can use it later
  * event listener - a way to register events that happen in the browser
  * string - piece of text
  * element - virtual representation of the html on the page
 */
 
+
 // wait for the page to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
-  // How do I select an element in JavaScript?
+  // all other code goes here
+
   // select the form from the html
-  var button = document.querySelector('form');
+  var form = document.querySelector('form');
 
-  // add an event listener on form submit
+  // add an event listeners
   form.addEventListener('submit', function(event) {
-    // prevents the default functionality of this form
+    // prevent the default functionality of this form (in this case to reload the page once you've pressed submit in a form)
     event.preventDefault();
+    console.log('button pressed');
 
+  // select slate box
+  var createSlateBox = document.querySelector('.slate-box');
 
-  var slateBox = document.createElement("p");
-  var node = document.createTextNode("This is new.");
-  para.appendChild(node);
-  var element = document.getElementById("div1");
-  element.appendChild(para);
+  // generate slate box
+  var slateBox = createSlateBox.value;
 
+  // capture the value of the last name input
+  var lastNameValue = lastNameInput.value;
+  console.log(firstNameValue, lastNameValue);
 
+  var p = document.createElement('p');
+  p.innerHTML = firstNameValue + ' ' + lastNameValue;
 
+  // select the user container
+  var userContainer = document.querySelector('.user-container');
 
+  // appent the p tag to the userContainer
+  userContainer.appendChild(p);
+  console.log (p);
 
-    // select first name input
-    var firstNameInput = document.querySelector('.first-name');
-    // select last name input
-    var lastNameInput = document.querySelector('.last-name');
-
-    // How do I get a value from an input in JavaScript?
-    // capture the value of the first name input
-    var firstNameValue = firstNameInput.value;
-
-    // capture the value of the last name input
-    var lastNameValue = lastNameInput.value;
-
-    var p = document.createElement('p');
-    p.innerHTML = firstNameValue + ' ' + lastNameValue;
-    // how to add text to an element in javascript
-
-    // how do I add an element to the page in JavaScript?
-    // select the user container
-    var userContainer = document.querySelector('.user-container');
-
-    // add the p tag to the userContainer
-    userContainer.appendChild(p);
   });
+
 });
+
+
+
+//
+// // wait for the page to be fully loaded
+// document.addEventListener('DOMContentLoaded', function() {
+//
+//   // How do I select an element in JavaScript?
+//   // select the form from the html
+//   var button = document.querySelector('form');
+//
+//   // add an event listeners
+//   form.addEventListener('submit', function(event) {
+//     // prevent the default functionality of this form (in this case to reload the page once you've pressed submit in a form)
+//     event.preventDefault();
+//     console.log('form submitted');
+//
+//   var makeSlateBox = document.createElement('div');
+//   var slateBox = document.createTextNode('.slate-box');
+//   para.appendChild(node);
+//   var element = document.getElementByClassName('.colored-boxes');
+//   element.appendChild(makeSlateBox);
+//
+//   });
+// });

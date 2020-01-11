@@ -52,6 +52,7 @@ a {
 .flex {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .flex-column {
@@ -129,4 +130,19 @@ input {
   width: 18vh;
   height: 8vh;
   background-color: SlateGrey;
+  /* visibility: hidden; */
+}
+
+.dim-box {
+  width: 18vh;
+  height: 8vh;
+  background-color: DimGrey;
+  /* visibility: hidden; */
+}
+
+.light-box {
+  width: 18vh;
+  height: 8vh;
+  background-color: LightGrey;
+  /* visibility: hidden; */
 }
