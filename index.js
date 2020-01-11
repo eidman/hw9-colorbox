@@ -12,62 +12,41 @@
  * event listener - a way to register events that happen in the browser
  * string - piece of text
  * element - virtual representation of the html on the page
-*/
-
+ */
 
 // wait for the page to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-
+document.addEventListener("DOMContentLoaded", function() {
   // all other code goes here
 
-  // select the form from the html
-  var form = document.querySelector('form');
+  // select the button from the html
+  var buttons = document.querySelector(".buttons");
 
-  // add an event listeners
-  form.addEventListener('submit', function(event) {
-    // prevent the default functionality of this form (in this case to reload the page once you've pressed submit in a form)
-    event.preventDefault();
-    console.log('button pressed');
+  document
+    .getElementById("dark-btn")
+    .addEventListener("click", myFunction, false);
 
-  // select slate box
-  var createSlateBox = document.querySelector('.slate-box');
-
-  // generate slate box
-  var slateBox = createSlateBox.value;
-
-  // capture the value of the last name input
-  var lastNameValue = lastNameInput.value;
-  console.log(firstNameValue, lastNameValue);
-
-  var p = document.createElement('p');
-  p.innerHTML = firstNameValue + ' ' + lastNameValue;
-
-  // select the user container
-  var userContainer = document.querySelector('.user-container');
-
-  // appent the p tag to the userContainer
-  userContainer.appendChild(p);
-  console.log (p);
-
-  });
-
+  function myFunction() {
+    alert("Hello! I am an alert box!!");
+  }
 });
+// // capture the value of the slate box
+// var createSlateBox = createSlateBox.value;
 
+// var slateBox = document.createElement(".slate-box");
 
+// // select the user container
+// var boxContainer = document.querySelector(".box-container");
 
-//
-// // wait for the page to be fully loaded
-// document.addEventListener('DOMContentLoaded', function() {
-//
-//   // How do I select an element in JavaScript?
-//   // select the form from the html
-//   var button = document.querySelector('form');
-//
-//   // add an event listeners
-//   form.addEventListener('submit', function(event) {
-//     // prevent the default functionality of this form (in this case to reload the page once you've pressed submit in a form)
-//     event.preventDefault();
-//     console.log('form submitted');
+// append the p tag to the userContainer
+
+//     var insertDarkBox;
+//     var darkBox;
+
+//     insertDarkBox = document.createElement("div");
+//     console.log("div");
+//     darkBox = document.getElementByClassName("box-container");
+//     darkBox.appendChild(insertDarkBox);
+
 //
 //   var makeSlateBox = document.createElement('div');
 //   var slateBox = document.createTextNode('.slate-box');
@@ -75,5 +54,3 @@ document.addEventListener('DOMContentLoaded', function() {
 //   var element = document.getElementByClassName('.colored-boxes');
 //   element.appendChild(makeSlateBox);
 //
-//   });
-// });
