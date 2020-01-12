@@ -22,17 +22,18 @@ document.addEventListener("DOMContentLoaded", function() {
   var buttons = document.querySelector(".buttons");
 
   document
-    .getElementById("dark-btn")
+    .getElementById("black-btn")
     .addEventListener("click", myFunction, false);
 
-  var darkBox = document.createElement("dark-box"); // is a node
+  var darkBox = document.createElement("div"); // is a node
   darkBox.innerHTML = "TEST";
-  console.log(darkBox);
 
   function myFunction() {
     document.body.appendChild(darkBox);
+    document.getElementById("black-box").style.border = "thick solid #0000FF";
   }
 });
+
 // // capture the value of the slate box
 // var createSlateBox = createSlateBox.value;
 

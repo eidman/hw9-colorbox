@@ -60,16 +60,16 @@ button {
   text-align: center;
 }
 
-#dark-btn {
-  background-color: SlateGrey;
+#black-btn {
+  background-color: black;
 }
 
-#medium-btn {
-  background-color: DimGrey;
+#blue-btn {
+  background-color: blue;
 }
 
-#light-btn {
-  background-color: LightGrey;
+#green-btn {
+  background-color: green;
 }
 
 .box-container {
@@ -79,23 +79,23 @@ button {
   border: 1px solid #111;
 }
 
-.dark-box {
+#black-box {
   width: 10vh;
   height: 8vh;
-  background-color: SlateGrey;
+  background-color: black;
   /* visibility: hidden; */
 }
 
-.medium-box {
+.blue-box {
   width: 10vh;
   height: 8vh;
-  background-color: DimGrey;
+  background-color: blue;
   /* visibility: hidden; */
 }
 
-.light-box {
+.green-box {
   width: 10vh;
   height: 8vh;
-  background-color: LightGrey;
+  background-color: green;
   /* visibility: hidden; */
 }
