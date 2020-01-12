@@ -25,12 +25,15 @@ document.addEventListener("DOMContentLoaded", function() {
     .getElementById("black-btn")
     .addEventListener("click", myFunction, false);
 
-  var darkBox = document.createElement("div"); // is a node
-  darkBox.innerHTML = "TEST";
+  var blackBox = document.createElement("div"); // is a node
+  // blackBox.innerHTML = "TEST";
 
   function myFunction() {
-    document.body.appendChild(darkBox);
-    document.getElementById("black-box").style.border = "thick solid #0000FF";
+    document.body.appendChild(blackBox);
+    document.getElementById("black-box").style.backgroundSize = "600px 120px";
+    document.getElementById("black-box").style.backgroundColor = "red";
+
+    // document.getElementById("box-container").style.border = "thick solid #000";
   }
 });
 
