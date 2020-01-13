@@ -19,22 +19,21 @@ document.addEventListener("DOMContentLoaded", function() {
   // all other code goes here
 
   // select the button from the html
-  var buttons = document.querySelector(".buttons");
+  var blackButton = document.querySelector(".black-btn");
 
-  document
-    .getElementById("black-btn")
-    .addEventListener("click", myFunction, false);
+  blackButton.addEventListener("Black", function(event) {
+    document.getElementById("black-btn").addEventListener("click", myFunction);
 
-  var blackBox = document.createElement("div"); // is a node
-  // blackBox.innerHTML = "TEST";
+    var blackBox = document.createElement("div"); // is a node
+    // blackBox.innerHTML = "TEST";
 
-  function myFunction() {
-    document.body.appendChild(blackBox);
-    document.getElementById("black-box").style.backgroundSize = "600px 120px";
-    document.getElementById("black-box").style.backgroundColor = "red";
+    function myFunction() {
+      document.body.appendChild(blackBox);
+      document.getElementById("black-box").style.backgroundColor = "red";
 
-    // document.getElementById("box-container").style.border = "thick solid #000";
-  }
+      // document.getElementById("box-container").style.border = "thick solid #000";
+    }
+  });
 });
 
 // // capture the value of the slate box
