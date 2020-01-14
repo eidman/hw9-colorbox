@@ -63,6 +63,10 @@ button {
   background-color: grey;
 }
 
+.grey:hover {
+  background-color: darkgrey;
+}
+
 .darkgrey {
   background-color: darkgrey;
 }
@@ -71,11 +75,18 @@ button {
   background-color: lightgrey;
 }
 
-#box-container {
-  width: 100vh;
+#inner-box {
+  width: 180vh;
   height: 80vh;
-  border: 1px solid slategrey;
+  border: 1px solid #dcdcdc;
   overflow: hidden;
+}
+
+.created-box {
+  display: inline-block;
+  margin-top: -3px;
+  width: 18vh;
+  height: 8vh;
 }
 
 /* #black-box {
@@ -95,10 +106,3 @@ button {
   height: 8vh;
   background-color: green;
 }  */
-
-.created-box {
-  display: inline-block;
-  margin-top: -3px;
-  width: 10vh;
-  height: 8vh;
-}

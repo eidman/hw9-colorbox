@@ -26,23 +26,23 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   document
-    .getElementById("black-btn")
-    .addEventListener("click", createBlackBox);
-  function createBlackBox() {
-    var newBlackBox = document.createElement("div");
-    newBlackBox.className = "created-box black";
-    document.getElementById("inner-box").appendChild(newBlackBox);
-    console.log("black button was pressed");
+    .getElementById("darkgrey-btn")
+    .addEventListener("click", createDarkgreyBox);
+  function createDarkgreyBox() {
+    var newDarkgreyBox = document.createElement("div");
+    newDarkgreyBox.className = "created-box darkgrey";
+    document.getElementById("inner-box").appendChild(newDarkgreyBox);
+    console.log("dark grey button was pressed");
   }
 
   document
-    .getElementById("black-btn")
-    .addEventListener("click", createLightBox);
-  function createBlackBox() {
-    var newBlackBox = document.createElement("div");
-    newBlackBox.className = "created-box black";
-    document.getElementById("inner-box").appendChild(newBlackBox);
-    console.log("black button was pressed");
+    .getElementById("lightgrey-btn")
+    .addEventListener("click", createLightgreyBox);
+  function createLightgreyBox() {
+    var newLightgreyBox = document.createElement("div");
+    newLightgreyBox.className = "created-box lightgrey";
+    document.getElementById("inner-box").appendChild(newLightgreyBox);
+    console.log("light grey button was pressed");
   }
 });
 
