@@ -15,26 +15,53 @@
  */
 
 // wait for the page to be fully loaded
+
 document.addEventListener("DOMContentLoaded", function() {
-  // all other code goes here
+  document.getElementById("grey-btn").addEventListener("click", createGreyBox);
+  function createGreyBox() {
+    var newGreyBox = document.createElement("div");
+    newGreyBox.className = "created-box grey";
+    document.getElementById("inner-box").appendChild(newGreyBox);
+    console.log("grey button was pressed");
+  }
 
-  // select the button from the html
-  var blackButton = document.querySelector(".black-btn");
+  document
+    .getElementById("black-btn")
+    .addEventListener("click", createBlackBox);
+  function createBlackBox() {
+    var newBlackBox = document.createElement("div");
+    newBlackBox.className = "created-box black";
+    document.getElementById("inner-box").appendChild(newBlackBox);
+    console.log("black button was pressed");
+  }
 
-  blackButton.addEventListener("Black", function(event) {
-    document.getElementById("black-btn").addEventListener("click", myFunction);
-
-    var blackBox = document.createElement("div"); // is a node
-    // blackBox.innerHTML = "TEST";
-
-    function myFunction() {
-      document.body.appendChild(blackBox);
-      document.getElementById("black-box").style.backgroundColor = "red";
-
-      // document.getElementById("box-container").style.border = "thick solid #000";
-    }
-  });
+  document
+    .getElementById("black-btn")
+    .addEventListener("click", createLightBox);
+  function createBlackBox() {
+    var newBlackBox = document.createElement("div");
+    newBlackBox.className = "created-box black";
+    document.getElementById("inner-box").appendChild(newBlackBox);
+    console.log("black button was pressed");
+  }
 });
+
+//   var blackButton = document.querySelector(".black-btn");
+
+//   blackButton.addEventListener("Black", function(event) {
+//     document.getElementById("black-btn").addEventListener("click", myFunction);
+
+//     var blackBox = document.createElement("div"); // is a node
+//     // blackBox.innerHTML = "TEST";
+
+//     function myFunction() {
+//       document.body.appendChild(blackBox);
+//       document.getElementById("black-box").style.backgroundColor = "red";
+
+//       // document.getElementById("box-container").style.border = "thick solid #000";
+//     }
+//   });
+// });
 
 // // capture the value of the slate box
 // var createSlateBox = createSlateBox.value;

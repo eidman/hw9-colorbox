@@ -47,7 +47,6 @@ img {
 /* BUTTONS */
 
 button {
-  background-color: #000;
   color: #fff;
   text-decoration: none;
   padding: 10px 30px;
@@ -60,42 +59,46 @@ button {
   text-align: center;
 }
 
-#black-btn {
-  background-color: black;
+.grey {
+  background-color: grey;
 }
 
-#blue-btn {
-  background-color: blue;
+.darkgrey {
+  background-color: darkgrey;
 }
 
-#green-btn {
-  background-color: green;
+.lightgrey {
+  background-color: lightgrey;
 }
 
 #box-container {
-  display: flex;
   width: 100vh;
   height: 80vh;
-  border: 1px solid #111;
+  border: 1px solid slategrey;
+  overflow: hidden;
 }
 
-#black-box {
+/* #black-box {
   width: 10vh;
   height: 8vh;
   background-color: black;
   /* visibility: hidden; */
-}
 
-.blue-box {
+/* .blue-box {
   width: 10vh;
   height: 8vh;
   background-color: blue;
-  /* visibility: hidden; */
 }
 
 .green-box {
   width: 10vh;
   height: 8vh;
   background-color: green;
-  /* visibility: hidden; */
+}  */
+
+.created-box {
+  display: inline-block;
+  margin-top: -3px;
+  width: 10vh;
+  height: 8vh;
 }
