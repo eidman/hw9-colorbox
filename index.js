@@ -48,12 +48,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   document
-    .getElementByClassName("created-box grey")
+    .getElementById("box-container")
     .addEventListener("click", deleteSilverBox);
-  function createSilverBox() {
-    var newSilverBox = document.createElement("div");
-    newSilverBox.className = "created-box silver";
-    document.getElementById("box-container").removeChild(newSilverBox);
+  function deleteSilverBox() {
+    deleteSilverBox.className = "created-box silver";
+    document.getElementById("box-container").removeChild(deleteSilverBox);
     console.log("silver button was deleted");
   }
 });
