@@ -36,4 +36,24 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("box-container").appendChild(newLightgreyBox);
     console.log("light grey button was pressed");
   }
+
+  document
+    .getElementById("silver-btn")
+    .addEventListener("click", createSilverBox);
+  function createSilverBox() {
+    var newSilverBox = document.createElement("div");
+    newSilverBox.className = "created-box silver";
+    document.getElementById("box-container").appendChild(newSilverBox);
+    console.log("silver button was pressed");
+  }
+
+  document
+    .getElementByClassName("created-box grey")
+    .addEventListener("click", deleteSilverBox);
+  function createSilverBox() {
+    var newSilverBox = document.createElement("div");
+    newSilverBox.className = "created-box silver";
+    document.getElementById("box-container").removeChild(newSilverBox);
+    console.log("silver button was deleted");
+  }
 });

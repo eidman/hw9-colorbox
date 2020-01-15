@@ -83,16 +83,24 @@ button {
   background-color: #dcdcdc;
 }
 
+.silver {
+  background-color: #c0c0c0;
+}
+
+.silver:hover {
+  background-color: #lightgrey;
+}
+
 #box-container {
   display: flex;
   flex-wrap: wrap;
-  width: 180vh;
+  width: 80vw;
   height: 80vh;
   border: 1px solid #dcdcdc;
   overflow: hidden;
 }
 
 .created-box {
-  width: 18vh;
+  width: 8vw;
   height: 8vh;
 }
