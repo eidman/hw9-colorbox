@@ -71,11 +71,21 @@ button {
   background-color: darkgrey;
 }
 
+.darkgrey:hover {
+  background-color: grey;
+}
+
 .lightgrey {
   background-color: lightgrey;
 }
 
-#inner-box {
+.lightgrey:hover {
+  background-color: #dcdcdc;
+}
+
+#box-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 180vh;
   height: 80vh;
   border: 1px solid #dcdcdc;
@@ -83,26 +93,6 @@ button {
 }
 
 .created-box {
-  display: inline-block;
-  margin-top: -3px;
   width: 18vh;
   height: 8vh;
 }
-
-/* #black-box {
-  width: 10vh;
-  height: 8vh;
-  background-color: black;
-  /* visibility: hidden; */
-
-/* .blue-box {
-  width: 10vh;
-  height: 8vh;
-  background-color: blue;
-}
-
-.green-box {
-  width: 10vh;
-  height: 8vh;
-  background-color: green;
-}  */
