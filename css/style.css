@@ -64,7 +64,7 @@ button {
 }
 
 .grey:hover {
-  background-color: darkgrey;
+  background-color: royalblue;
 }
 
 .darkgrey {
@@ -72,7 +72,7 @@ button {
 }
 
 .darkgrey:hover {
-  background-color: grey;
+  background-color: royalblue;
 }
 
 .lightgrey {
@@ -80,7 +80,7 @@ button {
 }
 
 .lightgrey:hover {
-  background-color: #dcdcdc;
+  background-color: royalblue;
 }
 
 .silver {
@@ -88,19 +88,19 @@ button {
 }
 
 .silver:hover {
-  background-color: #lightgrey;
+  background-color: royalblue;
 }
 
-#box-container {
+.box-container {
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 1000px;
   height: 80vh;
   border: 1px solid #dcdcdc;
   overflow: hidden;
 }
 
-.created-box {
-  width: 8vw;
+.box {
+  width: 100px;
   height: 8vh;
 }
