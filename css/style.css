@@ -29,18 +29,12 @@ img {
 /* FLEX UTILS */
 .flex {
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .flex-column-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.flex-align-center {
-  display: flex;
   align-items: center;
 }
 
@@ -96,7 +90,7 @@ button {
   flex-wrap: wrap;
   width: 1000px;
   height: 80vh;
-  border: 1px solid #dcdcdc;
+  outline: 1px solid #dcdcdc;
   overflow: hidden;
 }
 
