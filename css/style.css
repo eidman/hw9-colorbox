@@ -87,6 +87,7 @@ button {
 
 .box-container {
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
   width: 1000px;
   height: 80vh;
