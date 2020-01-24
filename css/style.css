@@ -53,6 +53,11 @@ button {
   text-align: center;
 }
 
+button:hover {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
 .grey {
   background-color: grey;
 }
